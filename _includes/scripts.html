@@ -1,3 +1,54 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
 {% include analytics.html %}
+
+<script>
+(function () {
+  const el = document.getElementById("motto-text");
+  if (!el) return;
+
+  const mottos = [
+    "You are not who others think you are;\nyou are reflected in how you see others.",
+    "别人眼中的你不是你，\n你眼中的别人才是你。",
+  ];
+
+  const typingSpeed = 90;
+  const deletingSpeed = 50;
+  const holdAfterType = 1200;
+  const holdAfterDelete = 300;
+
+  let mottoIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function tick() {
+    const current = mottos[mottoIndex];
+
+    if (!deleting) {
+      el.textContent = current.slice(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === current.length) {
+        deleting = true;
+        setTimeout(tick, holdAfterType);
+        return;
+      }
+      setTimeout(tick, typingSpeed);
+    } else {
+      const nextText = current.slice(0, charIndex - 1);
+      el.textContent = nextText.length ? nextText : "\u00A0";
+      charIndex--;
+
+      if (charIndex === 0) {
+        deleting = false;
+        mottoIndex = (mottoIndex + 1) % mottos.length;
+        setTimeout(tick, holdAfterDelete);
+        return;
+      }
+      setTimeout(tick, deletingSpeed);
+    }
+  }
+
+  tick();
+})();
+</script>

@@ -1,0 +1,75 @@
+- title: "Project 1 — Secure AI / LLM System Hardening"
+  image: "projects/test.jpg"
+  image_layout: "wide"
+  image_position: "center"
+  period: "2024–2025"
+  role: "Lead / Owner"
+  highlights:
+    - "Built a security-first serving pipeline with defense-in-depth and reproducible evaluation."
+    - "Optimized critical paths to reduce latency while maintaining robustness guarantees."
+  tech: ["Security", "AI", "Systems", "Efficiency"]
+  links:
+    - label: "Code"
+      url: "https://github.com/yourname/project1"
+    - label: "Paper"
+      url: "https://arxiv.org/abs/xxxx.xxxxx"
+    - label: "Demo"
+      url: "https://example.com/demo1"
+
+- title: "Project 2 — Adversarial Robustness Benchmarking"
+  image: "projects/test.jpg"
+  image_layout: "normal"
+  image_position: "center"
+  period: "2023–2024"
+  role: "Research"
+  highlights:
+    - "Designed a standardized adversarial evaluation suite for model robustness."
+    - "Improved reporting with strong baselines and ablation-driven analysis."
+  tech: ["AI Security", "Adversarial", "Evaluation"]
+  links:
+    - label: "Code"
+      url: "https://github.com/yourname/project2"
+    - label: "Read"
+      url: "https://example.com/project2"
+
+- title: "Project 3 — Efficient Inference & Systems Optimization"
+  image: "projects/test.jpg"
+  image_layout: "wide"
+  image_position: "center"
+  period: "2023"
+  role: "Engineer"
+  highlights:
+    - "Profiling-driven optimization for throughput/latency under realistic workloads."
+    - "Improved stability via backpressure, rate limiting, and resource isolation."
+  tech: ["Systems", "Performance", "Efficiency", "Linux"]
+  links:
+    - label: "Case Study"
+      url: "https://example.com/project3"
+
+- title: "Project 4 — Monitoring & Reliability for ML Services"
+  image: "projects/lightnas.png"
+  image_layout: "normal"
+  image_position: "center"
+  period: "2022–2023"
+  role: "Contributor"
+  highlights:
+    - "Built telemetry/alerting for ML services; reduced noise with better calibration."
+    - "Incident-ready dashboards with actionable SLOs and playbooks."
+  tech: ["SRE", "Monitoring", "Reliability", "MLOps"]
+  links:
+    - label: "Write-up"
+      url: "https://example.com/project4"
+
+- title: "Project 5 — Secure Deployment Toolkit"
+  image: "projects/zerobn.png"
+  image_layout: "wide"
+  image_position: "center"
+  period: "2022"
+  role: "Personal"
+  highlights:
+    - "Secure-by-default templates for service deployment and secrets handling."
+    - "Automation scripts for repeatable release and safer operations."
+  tech: ["Security", "DevOps", "Automation"]
+  links:
+    - label: "Code"
+      url: "https://github.com/yourname/project5"
